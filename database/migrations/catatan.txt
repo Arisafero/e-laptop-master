@@ -1,0 +1,10 @@
+a. membuat file migration dengan artisan:
+    1. untuk menambahkan tabel baru
+        php artisan make:migration create_<namaTabel>_table
+    2. untuk menambahkan kolom baru pada tabel yang sudah ada
+        php artisan make:migration add_<namaKolom>_to_<namaTabel>_table
+
+b. untuk menjalankan file migration (eksekusi file migration menjadi tabel pada database mysql)
+    php artisan migrate (menjalankan function up() pada setiap file migration)
+    php artisan migrate:rollback (menjalankan function down() pada setiap file migration yang sudah di migrate pada batch terakhir)
+    php artisan migrate:refresh (menjalankan ulang function up() setelah function down() terlebih dahulu dijalankan)

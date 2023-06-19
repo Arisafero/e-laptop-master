@@ -1,0 +1,22 @@
+a. cara membuat model dengan artisan
+    php artisan make:model <namaModel>
+    model - model :
+    1. DetailPesanan
+    2. Merek
+    3. Produk
+    4. Keranjang
+    5. Bank
+    6. Pengiriman
+    7. Pesanan
+    8. BannerSatu
+    9. BannerDua
+
+b. magic connection laravel. model dan table bisa otomatis tersambung.
+    syarat bisa menyambung otomatis
+    1. nama model adalah bentuk tunggal dari nama tabel
+    2. nama tabel adalah bentuk jamak dari nama model
+
+c. relasi table pada model
+    1. hasMany ->  has one to many (berlaku untuk kolom PK)
+    2. hasOne -> has one to one (berlaku untuk kolom PK)
+    3. belongsTo -> one to one (berlaku untuk kolom FK)
